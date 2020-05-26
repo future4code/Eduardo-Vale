@@ -3,6 +3,8 @@
     padding: 0px;
 }
 
+/* Cabeçalho */
+
 header {
     text-align: center;
     font-family: cursive;
@@ -30,6 +32,8 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .menu li a:hover{
@@ -40,7 +44,14 @@ li{
     display: inline;
 }
 
-h5 {
-    margin-bottom: 2000px;
-    border: 2px solid red;
+/* Rodapé */
+
+footer{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+hr{
+    margin: 10px 0px;
+    border:2px solid blue;
 }
