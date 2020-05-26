@@ -93,5 +93,46 @@ td{
     border-bottom: 2px solid red;
 }
 
+.radio{
+    display: block;
+    margin: 8px;
+}
 
+.conteiner{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.radiocel, .pagamento{
+text-align: center;
+justify-content: center;
+align-items: center;
+border: 2px solid rgb(65, 61, 61);
+margin: 20px;
+padding: 20px;
+
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.conteiner p{
+    font-weight: bold;
+}
+
+.qtd{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+    }
+
+.submit{
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 16px;
+    margin: 8px;
+    padding: 8px;
+    
+}
