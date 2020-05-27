@@ -114,6 +114,14 @@ td button {
     color: black;
 }
 
+td button:hover{
+    background-color: #d6be50;
+}
+
+td button:active{
+    color: #fff;
+}
+
 table img {
     width: 50px;
 }
@@ -137,3 +145,4 @@ table img {
 #back-button:hover {
     background-color: #635a3d
 }
+
