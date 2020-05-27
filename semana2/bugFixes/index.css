@@ -62,9 +62,15 @@ div img {
   *
   **/
 
+
+
 #container-de-descricao {
     background-color: #2274a5;
     color: white;
+}
+
+#container-de-descricao p{
+    padding-top: 100px;      /* corrigir */
 }
 
 #container-de-descricao>ol {
