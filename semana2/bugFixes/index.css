@@ -153,3 +153,8 @@ input{
     border: 0px;
     border-bottom: 5px solid ;
 }
+
+div:last-of-type{
+    margin-top: 50px;
+    text-align: center;
+}
