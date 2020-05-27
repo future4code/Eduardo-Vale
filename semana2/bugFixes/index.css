@@ -29,9 +29,7 @@ img {
     width: 100px;
 }
 
-div img {
-    /* background: black; */
-}
+
 
 .botao-amarelo {
     background-color: #ffaf43;
@@ -146,3 +144,7 @@ table img {
     background-color: #635a3d
 }
 
+input{
+    border: 0px;
+    border-bottom: 5px solid ;
+}
