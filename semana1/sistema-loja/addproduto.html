@@ -6,45 +6,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+
     <title>PRODUTOS | DVPT</title>
 </head>
 
 <body>
-    <center>
-        <h2>Adiconar produto</h2>
-    </center>
+    <header>
+        <h1>DO VALE PRODUTOS TECNOLÓGICOS</h1>
+    </header>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home </a></li>
+            <li><a href="estoque.html">Veja nosso estoque</a></li>
+            <li><a href="funcionarios.html">Conheça nossos funcionários</a></li>
+        </ul>
+    </div>
 
-    <form action="#" >
-        <div >
-            <label for="imagem">Imagem</label>
-            <input type="file" required>
+    <h2 class="mensagem-principal">Adicionar produto</h2>
+
+    <form action="#">
+
+        <div class="conteiner">
+            <div class="radiocel">
+                <p>Escolha um produto</p>
+                <label class="radio">iPhone 11
+                    <input type="radio" checked="checked" name="radio">
+                </label>
+                <label class="radio">Xiaomi Mi 9
+                    <input type="radio" name="radio">
+                </label>
+                <label class="radio">Samsung Galaxy S20
+                    <input type="radio" name="radio">
+                </label>
+                <label class="radio">Motorola One Zoom
+                    <input type="radio" name="radio">
+                </label>
+            </div>
+
+
+
+            <div class="pagamento">
+                <p>Forma de pagamento</p>
+                <label class="radio">Boleto
+                    <input type="radio" checked="checked" name="radio">
+                </label>
+                <label class="radio">Crédito
+                    <input type="radio" name="radio">
+                </label>
+                <label class="radio">Débito
+                    <input type="radio" name="radio">
+                </label>
+                <label class="radio">QR-Code
+                    <input type="radio" name="radio">
+                </label>
+            </div>
+
+
+
         </div>
-        <hr>
-        <div>
-            <label for="descricao">Descrição</label>
-            <input type="text" required>
+        <div class="qtd">
+            <label for="Quantidade">Quantidade: </label>
+            <input type="number" required min="1" max="5">
         </div>
-        <hr>
-        <div>
-            <label for="preço">Preço</label>
-            <input type="text" required>
-        </div>
-        <hr>
-        <div>
-            <label for="Quantidade">Quantidade</label>
-            <input type="number" required>
-        </div>
-        <hr>
-        <div>
+        <div class="submit">
             <button type="submit">Enviar</button>
         </div>
     </form>
 
-    <hr>
-    <button>
-        <a href="index.html">Voltar</a>
-    </button>
-
+    <footer>
+        <hr>
+        <p>Todos os direitos reservados &copy; 2020</p>
+    </footer>
 </body>
 
 </html>
