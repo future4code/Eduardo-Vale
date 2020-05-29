@@ -12,8 +12,12 @@ body {
 
 .bloco-lateral {
     background-color: rgb(170, 150, 150);
-    height: 1200px;
+    height: 100%;
     width: 20%;
+    border: 1px solid #000;
+    /* display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column; */
 }
 
 .bloco-lateral>p:first-child {
@@ -31,8 +35,9 @@ body {
 .blocos {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     justify-content: space-evenly;
+    width: 80%;
+    height: 50%;
 }
 
 .bloco-red {
@@ -67,8 +72,24 @@ body {
     background-color: #000;
     color: #fff;
     width: 46.5%;
-    height: 46.5%;
+    height: 260px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width:800px) {
+    .bloco1, .bloco2, .bloco4, .bloco5, .bloco9, .bloco10 {
+        width: 45%;
+    }
+    .bloco3, .bloco6, .bloco11 {
+        width: 93.5%;
+    }
+    .bloco-lateral {
+        height: 200vh;
+    }
+    .bloco7, .bloco8 {
+        width: 94%;
+    }
+    
 }
