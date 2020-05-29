@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+.bloco-lateral {
+    background-color: rgb(170, 150, 150);
+    height: 1200px;
+    width: 20%;
+}
+
+.bloco-lateral>p:first-child {
+    margin-top: 0;
+}
+
+.bloco-lateral p {
+    margin-left: 20px;
+}
+
+.bloco-lateral ul {
+    padding-left: 20px;
+}
+
+.blocos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.bloco-red {
+    background-color: red;
+    width: 100%;
+    height: 100px;
+}
+
+.bloco1, .bloco2, .bloco3, .bloco4, .bloco5, .bloco6, .bloco9, .bloco10, .bloco11 {
+    border: 1px solid #000;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px 0; */
+    height: 130px;
+}
+
+.bloco1, .bloco4 {
+    background-color: blue;
+}
+
+.bloco2, .bloco5 {
+    background-color: yellow;
+}
+
+.bloco3, .bloco6 {
+    background-color: green;
+}
+
+.bloco7, .bloco8 {
+    background-color: #000;
+    color: #fff;
+    width: 46.5%;
+    height: 46.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
