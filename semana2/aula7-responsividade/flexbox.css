@@ -3,21 +3,20 @@ body {
     padding: 0;
 }
 
+/* container principal */
+
 .container {
     display: flex;
     flex-wrap: nowrap;
-    width: 100%;
     height: 100%;
 }
 
+/* bloco esquerdo da página e suas estilizações*/
+
 .bloco-lateral {
     background-color: rgb(170, 150, 150);
-    height: 100%;
     width: 20%;
     border: 1px solid #000;
-    /* display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column; */
 }
 
 .bloco-lateral>p:first-child {
@@ -32,27 +31,31 @@ body {
     padding-left: 20px;
 }
 
+/* bloco central da página e suas estilizações*/
+
 .blocos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 80%;
-    height: 50%;
+    width: 100%;
+}
+
+.blocos>div {
+    margin-bottom: 20px;
 }
 
 .bloco-red {
     background-color: red;
     width: 100%;
-    height: 100px;
+    height: 130px;
 }
 
 .bloco1, .bloco2, .bloco3, .bloco4, .bloco5, .bloco6, .bloco9, .bloco10, .bloco11 {
     border: 1px solid #000;
-    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 10px 0; */
+    width: 30%;
     height: 130px;
 }
 
@@ -78,6 +81,8 @@ body {
     align-items: center;
 }
 
+/* tablets */
+
 @media screen and (max-width:800px) {
     .bloco1, .bloco2, .bloco4, .bloco5, .bloco9, .bloco10 {
         width: 45%;
@@ -85,11 +90,29 @@ body {
     .bloco3, .bloco6, .bloco11 {
         width: 93.5%;
     }
-    .bloco-lateral {
-        height: 200vh;
-    }
     .bloco7, .bloco8 {
+        width: 45.5%;
+    }
+}
+
+/* tablets menores ou smartphones grandes */
+
+@media screen and (max-width: 600px) {
+    .bloco-lateral {
+        display: none;
+    }
+}
+
+/* smartphones */
+
+@media screen and (max-width: 500px) {
+    .bloco-lateral {
+        display: none;
+    }
+    .blocos>div:nth-child(n+2) {
         width: 94%;
     }
-    
+    .bloco7, .bloco8 {
+        height: 130px;
+    }
 }
