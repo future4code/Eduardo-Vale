@@ -16,7 +16,6 @@ body {
 .bloco-lateral {
     background-color: rgb(170, 150, 150);
     width: 20%;
-    border: 1px solid #000;
 }
 
 .bloco-lateral>p:first-child {
@@ -41,7 +40,7 @@ body {
 }
 
 .blocos>div {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .bloco-red {
