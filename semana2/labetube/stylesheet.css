@@ -19,15 +19,11 @@ body, ul {
     font-weight: bolder;
 }
 
-.footer {
-    background-color: crimson;
-}
-
 /* bloco principal */
 
 .container {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(4, 300px);
     grid-gap: 16px;
     padding-top: 24px;
@@ -63,8 +59,8 @@ video {
     color: #fff;
     height: 50px;
     width: 100%;
-    top: 100px;
-    position: relative;
+    margin-top: 50px;
+    bottom: 0;
 }
 
 /* Layout da páginas */
@@ -83,10 +79,40 @@ video {
     width: 100%;
 }
 
+input {
+    width: 150px;
+    height: 40px;
+    margin: 0;
+    padding: 10px 10px;
+    border-radius: 4px;
+}
+
 a {
     text-decoration: none;
 }
 
-a:visited{
+a:visited {
     color: #000;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+    .box {
+        margin-bottom: 8px;
+    }
+    .descricao {
+        padding: 0 16px;
+    }
+    .video-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer {
+        margin-top: 150px;
+        height: 100px;
+    }
 }
