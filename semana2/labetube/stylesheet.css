@@ -66,7 +66,7 @@ video {
 /* Layout da páginas */
 
 .video-container {
-    width: 95%;
+    width: 70%;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -96,7 +96,6 @@ a:visited {
 }
 
 @media screen and (max-width: 800px) {
-
     .container {
         display: flex;
         flex-direction: column;
@@ -108,15 +107,15 @@ a:visited {
     .descricao {
         padding: 0 16px;
     }
-
-    .video-container{
+    .video-container {
         display: flex;
         flex-direction: column;
         padding: 10px;
         width: 95%;
+        margin-bottom: 300px;
     }
-
-    
-
-
+    /* .footer{
+        position: absolute;
+        bottom: 0;
+    } */
 }
