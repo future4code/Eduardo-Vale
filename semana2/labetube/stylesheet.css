@@ -66,3 +66,27 @@ video {
     top: 100px;
     position: relative;
 }
+
+/* Layout da páginas */
+
+.video-container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+main>.info {
+    padding-left: 0px;
+}
+
+video {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited{
+    color: #000;
+}
