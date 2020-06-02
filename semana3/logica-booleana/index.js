@@ -135,14 +135,33 @@ divisao de 10 por 3, = 1
 
 /*  2   Faça um programa que faça 5 perguntas para o usuário */
 
-let nome = prompt("Qual é o seu nome?");
-let cidade = prompt("Onde você mora?");
-let time = prompt("Qual é o seu time?");
-let filme = prompt("Qual é o seu filme favorito?");
-let labenu = prompt("Está gostando do curso da Labenu?");
+// let nome = prompt("Qual é o seu nome?");
+// let cidade = prompt("Onde você mora?");
+// let time = prompt("Qual é o seu time?");
+// let filme = prompt("Qual é o seu filme favorito?");
+// let labenu = prompt("Está gostando do curso da Labenu?");
 
-console.log("1 - Qual é o seu nome?\nR: " + nome)
-console.log("2 - Onde você mora?\nR: " + cidade)
-console.log("3 - Qual é o seu time?\nR: " + time)
-console.log("4 - Qual é o seu filme favorito?a\nR: " + filme)
-console.log("5 - Está gostando do curso da Labenu?\nR: " + labenu)
+// console.log("1 - Qual é o seu nome?\nR: " + nome)
+// console.log("2 - Onde você mora?\nR: " + cidade)
+// console.log("3 - Qual é o seu time?\nR: " + time)
+// console.log("4 - Qual é o seu filme favorito?a\nR: " + filme)
+// console.log("5 - Está gostando do curso da Labenu?\nR: " + labenu)
+
+/* 3    Quilowatt-hora é uma unidade de energia; e é muito utilizada para
+        se determinar o consumo de energia elétrica em residências. 
+        Sabe-se que o quilowatt-hora de energia custa R$0.05. 
+        Faça um programa que receba a quantidade de quilowatts consumida
+        por uma residência. 
+    a)  Calcule e mostre o valor a ser pago por uma residência que
+        consuma 280 quilowatt-hora;
+    b)  Altere o programa para receber mais um valor: a porcentagem 
+        de desconto. Calcule e mostre o valor a ser pago pela mesma 
+        residência acima considerando 15% de desconto.*/
+    
+    let kw = 0.05;
+    let consumo = 280;
+    let aPagar = kw * consumo;
+    console.log("a) Uma residência que consumiu " + consumo + " quilowatts deverá pagar R$ " + aPagar)
+    let valorComDesconto = aPagar - aPagar * 0.15;
+    console.log("b) Com desconto de 15%, o valor a pagar é R$ " + valorComDesconto)
+    
