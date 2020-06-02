@@ -85,3 +85,64 @@ console.log('VII. ', resultadoC)
 2dVII) i recebe 10, array[10] recebe 10, resultado C recebe o resto da
 divisao de 10 por 3, = 1
 */
+
+
+// PARTE 2 
+
+/*  1a)  Calcule e mostre o valor de 77°F em  K, mostrando
+        a unidade no console também.*/
+
+// let kelvin;
+// let graus_fahrenheit = 77;
+// kelvin = ((graus_fahrenheit - 32) * 5 / 9 + 273.15);
+// console.log(graus_fahrenheit + " F equivale a " + kelvin + " Kelvin.");
+
+/*  1b. Calcule e mostre o valor de 80°C em °F, 
+        mostrando a unidade no console também. */
+
+//let graus_fahrenheit;
+//let graus_celcius = 80;
+
+//graus_fahrenheit = ((graus_celcius) * 9 / 5 + 32);
+//console.log(graus_celcius + " C equivale a " + graus_fahrenheit + " F.")
+
+
+/* 1c   Calcule e mostre o valor de 30°C em °F e K, 
+        mostrando as unidades no console também
+*/
+
+// let graus_fahrenheit
+// let kelvin
+// let graus_celcius = 30
+
+// graus_fahrenheit = ((graus_celcius) * 9 / 5 + 32);
+// console.log(graus_celcius + " C equivale a " + graus_fahrenheit + " F.");
+// kelvin = graus_celcius + 273.15;
+// console.log(graus_celcius + " C equivale a " + kelvin + " Kelvin.");
+
+
+/* 1d   Altere o último item para que o usuário insira
+        o valor em graus Celsius que ele deseja converter. */
+
+// let graus_fahrenheit
+// let kelvin
+// let graus_celcius = prompt("Informe o valor em Cº");
+
+// graus_fahrenheit = ((graus_celcius) * 9 / 5 + 32);
+// console.log(graus_celcius + " C equivale a " + graus_fahrenheit + " F.");
+// kelvin = parseInt(graus_celcius) + 273.15;
+// console.log(graus_celcius + " C equivale a " + kelvin + " Kelvin.");
+
+/*  2   Faça um programa que faça 5 perguntas para o usuário */
+
+let nome = prompt("Qual é o seu nome?");
+let cidade = prompt("Onde você mora?");
+let time = prompt("Qual é o seu time?");
+let filme = prompt("Qual é o seu filme favorito?");
+let labenu = prompt("Está gostando do curso da Labenu?");
+
+console.log("1 - Qual é o seu nome?\nR: " + nome)
+console.log("2 - Onde você mora?\nR: " + cidade)
+console.log("3 - Qual é o seu time?\nR: " + time)
+console.log("4 - Qual é o seu filme favorito?a\nR: " + filme)
+console.log("5 - Está gostando do curso da Labenu?\nR: " + labenu)
