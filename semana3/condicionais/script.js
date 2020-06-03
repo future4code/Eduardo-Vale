@@ -1,3 +1,11 @@
+// RECAAADOOOOOOO:
+
+/*
+Em volta de casa exercício, coloquei  -->  [ / * ]    e    -->   [ * / ] 
+Basta removê-los para o código de cada exercício ficar descomentando.
+Enquanto as explicações estão com //
+*/
+
 /*
 
 // Exercício 1
@@ -96,3 +104,153 @@ console.log(mensagem)
              
 */
 
+// Exercío 4
+
+// a
+
+/*
+// a.  Crie um programa que receba dois números do usuário através do prompt e imprima-os na ordem decrescente. 
+//     O que acontece com o seu programa se os 2 números forem iguais? 
+//     (é só testar e colocar um comentário descrevendo o que aconteceu)
+
+
+
+let numero1 = prompt("Digite o primeiro número:")
+let numero2 = prompt("Digite o segundo número:")
+
+if (numero1 > numero2) {
+    console.log(numero1)
+    console.log(numero2)
+    // sendo o numero1 maior, ele é exibido primeiro
+} else if (numero2 > numero1) {
+    console.log(numero2)
+    console.log(numero1)
+    // Caso o número2 sema maior, ele é exibido primeiro
+}
+// caso os números sejam iguais, nada é exibido na tela.
+
+*/
+
+// b.   Adapte o programa para que o usuário digite 3 números. Ainda os imprima na ordem decrescente.
+// O que acontece como seu programa se os 3 números forem iguais?
+// (é só testar e colocar um comentário descrevendo o que aconteceu) 
+
+
+/*
+let numero1 = prompt("Digite o primeiro número:")
+let numero2 = prompt("Digite o segundo número:")
+let numero3 = prompt("Digite o terceiro número:")
+
+let numeroMaior;
+let numeroMedio;
+let numeroMenor;
+
+if (numero1 > numero2 && numero1 > numero3) {
+    numeroMaior = numero1
+    if (numero2 > numero3) {
+        numeroMedio = numero2
+        numeroMenor = numero3
+    } else if (numero3 > numero2) {
+        numeroMedio = numero3
+        numeroMenor = numero2
+    }
+
+} else if (numero2 > numero1 && numero2 > numero3) {
+    numeroMaior = numero2
+    if (numero1 > numero3) {
+        numeroMedio = numero1
+        numeroMenor = numero3
+    } else if (numero3 > numero1) {
+        numeroMedio = numero3
+        numeroMenor = numero1
+    }
+} else if (numero3 > numero1 && numero3 > numero2) {
+    numeroMaior = numero3
+    if (numero2 > numero1) {
+        numeroMedio = numero2
+        numeroMenor = numero1
+    } else if (numero1 > numero2) {
+        numeroMedio = numero1
+        numeroMenor = numero2
+    }
+}
+
+console.log(numeroMaior)
+console.log(numeroMedio)
+console.log(numeroMenor)
+// Caso o usuário digite 2 ou 3 números iguais, identificaremos um erro lógico,
+pois as variáveis numeroMaior, numereoMedio ou numeroMenor poderao ficar vazias (undefined)
+
+*/
+
+// c.     Agora, impeça que o usuário digite 3 números iguais. Caso todos sejam iguais,
+//        mostre um aviso ao usuário indicando que ele deve,
+//        ao menos, inserir um número diferente.
+
+/*
+
+let numero1 = prompt("Digite o primeiro número:")
+let numero2 = prompt("Digite o segundo número:")
+let numero3 = prompt("Digite o terceiro número:")
+
+if (numero1 === numero2 && numero2 === numero3) {
+    console.log("Chateado! Você digitou 3 números iguais, assim dificulta o processo. Tente novamente.")
+} else {
+
+    let numeroMaior;
+    let numeroMedio;
+    let numeroMenor;
+
+    if (numero1 > numero2 && numero1 > numero3) {
+        numeroMaior = numero1
+        if (numero2 > numero3) {
+            numeroMedio = numero2
+            numeroMenor = numero3
+        } else if (numero3 > numero2) {
+            numeroMedio = numero3
+            numeroMenor = numero2
+        }
+
+    } else if (numero2 > numero1 && numero2 > numero3) {
+        numeroMaior = numero2
+        if (numero1 > numero3) {
+            numeroMedio = numero1
+            numeroMenor = numero3
+        } else if (numero3 > numero1) {
+            numeroMedio = numero3
+            numeroMenor = numero1
+        }
+    } else if (numero3 > numero1 && numero3 > numero2) {
+        numeroMaior = numero3
+        if (numero2 > numero1) {
+            numeroMedio = numero2
+            numeroMenor = numero1
+        } else if (numero1 > numero2) {
+            numeroMedio = numero1
+            numeroMenor = numero2
+        }
+    }
+
+    console.log(numeroMaior)
+    console.log(numeroMedio)
+    console.log(numeroMenor)
+}
+
+*/
+
+
+// Exercício 5
+
+// Árvore condicional --> https://drive.google.com/file/d/1Jq9sklVvm2LyrJa2A7k_OagApF0nMPrV/view
+
+let resposta = prompt("Ossos formam seu esqueleto?")
+
+if (condition) {
+    console.log("É uma animal invertebrado")
+} else if (condition) {
+    
+} else {
+    
+}{
+    
+}
