@@ -243,14 +243,36 @@ if (numero1 === numero2 && numero2 === numero3) {
 
 // Árvore condicional --> https://drive.google.com/file/d/1Jq9sklVvm2LyrJa2A7k_OagApF0nMPrV/view
 
-let resposta = prompt("Ossos formam seu esqueleto?")
 
-if (condition) {
+alert("ATENÇÃO\nPara o melhor funcionamento do programa, responda apenas (s) para sim \nou (n) para não.")
+let resposta = prompt("Ossos formam seu esqueleto?")
+if (resposta == "n") {
     console.log("É uma animal invertebrado")
-} else if (condition) {
-    
 } else {
-    
-}{
-    
-}
+    resposta = prompt("Possui pelos?")
+    if (resposta == "s") {
+        resposta = prompt("É um animal racional?")
+        if (resposta == "s") {
+            console.log("É um ser humano")
+        } else {
+            console.log("Mamífero não humano")
+        }
+    } else {
+        resposta = prompt("Possui penas?")
+        if (resposta == "s") {
+            console.log("É uma ave")
+        } else {
+            resposta = prompt("É um animal terrestre?")
+            if (resposta == "s") {
+                resposta = prompt("Passe uma parte da vida em ambiente aquático?")
+                if (resposta == "s") {
+                    console.log("É um Anfíbio")
+                } else {
+                    console.log("É um réptil")
+                }
+            } else {
+                console.log("É um peixe")
+            }
+        }
+    }
+} 
