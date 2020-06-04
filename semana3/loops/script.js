@@ -44,7 +44,7 @@ console.log(novaLista)
 
 //EXERCÍCIO 3
 
-// a.  Escreva um programa que devolva o maior e o menor números contidos no array original
+// 3a.  Escreva um programa que devolva o maior e o menor números contidos no array original
 
 /*
 
@@ -71,7 +71,7 @@ console.log("Menor número: " + menor)
 
 */
 
-// b.  Escreva um programa que devolva um novo array contendo todos 
+// 3b.  Escreva um programa que devolva um novo array contendo todos 
 //     os valores do array original divididos por 10.
 
 /*
@@ -87,7 +87,7 @@ console.log(div10)
 
 */
 
-// c.  Escreva um programa que devolva um novo array contendo, somente, 
+// 3c.  Escreva um programa que devolva um novo array contendo, somente, 
 //     os números pares do array original.
 
 /*
@@ -106,17 +106,61 @@ console.log(pares)
 
 */
 
-// d.  Escreva um programa que gere um novo array contendo strings, da 
+
+// 3d.  Escreva um programa que gere um novo array contendo strings, da 
 //     seguinte forma: "O elemento do índex i é: numero"
 
 /*
-const original = [12, 43, 5, 7, 31, 6732, 2999999, 6, 120, 4, 6, 224, 43, 23, 7, 323, 7, 32, 60]
-let i = 1
 
-for (verifica of original){
-    console.log("O elemento do índex " + i + " é: " + verifica)
-    i++
+const original = [12, 43, 5, 7, 31, 6732, 2999999, 6, 120, 4, 6, 224, 43, 23, 7, 323, 7, 32, 60]
+
+
+for (let index = 0; index < original.length; index++) {
+    
+    console.log("O elemento do índex " + index + " é: " + original[index])
+}
+
+*/
+
+// DESAFIO 1
+
+/*
+const quantidadeTotal = Number(prompt("Digite a quantidade de linhas: "))
+let quantidadeAtual = 0
+while(quantidadeAtual < quantidadeTotal){
+  let linha = ""
+  for(let asteriscos = 0; asteriscos < quantidadeAtual + 1; asteriscos++){
+    linha += "0"
+  }
+  console.log(linha)
+  quantidadeAtual++
 }
 */
 
+// RESPOSTA: DEI MOLE! Fui direto olhar a saída no terminal. Agora eu já sei a resposta ...
 
+// DESAFIO 2
+
+let numero = []
+
+numSecreto = prompt("Jogador 1 digita um número: ")
+numero.push(numSecreto)
+
+// vou repetir o código porque não ensinaram o do while 
+
+let chute = prompt("Consegue adivinhar qual é o número?")
+console.log(numero[0])
+
+while (chute != numero[0]) {
+    console.log("EEEERROOOOUUUUU")
+    let chute = prompt("Vamos novamente. Qual é o número?")
+    chute = Number(chute)
+
+    if (chute > numero[0]) {
+        console.log("O número secreto é menor. Try again")
+    } else {
+        console.log("O número secreto é maior. Try again")
+    }
+}
+
+console.log("ACERTOOOUUU!!!!")
