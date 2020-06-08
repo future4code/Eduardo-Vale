@@ -22,6 +22,7 @@ let pontuacaoHal9000
 
 let jogar = true
 let novoSorteio = true
+let novaCarta = true
 
 while (jogar) {
    jogar = confirm("Quer iniciar uma nova rodada?")
@@ -56,12 +57,43 @@ while (jogar) {
 
       } while (novoSorteio);
 
-      // O código abaixo só pode ser executado se acima for ok
 
-      console.log(`Usuário - cartas: ${usuario[0].texto} ${usuario[1].texto} - pontuação: ${pontuacaoUsuario}`)
-      console.log(`Ha l9000 - cartas: ${hal9000[0].texto} ${hal9000[1].texto} - pontuação: ${pontuacaoHal9000}`)
+      novaCarta = confirm(
+         "Suas cartas são " + usuario[0].texto + usuario[1].texto + ". A carta revelada pelo computador é " + hal9000[0].texto + "." +
+         "\n" +
+         "Deseja comprar mais uma carta?"
+      )
+
+      if (novaCarta) {
+         usuario.push(comprarCarta())
+         hal9000.push(comprarCarta())
+
+      } else {
+
+      }
 
 
+
+
+
+
+
+
+
+
+
+
+      if (usuario.length === 2) {
+         console.log(`Usuário - cartas: ${usuario[0].texto} ${usuario[1].texto} - pontuação: ${pontuacaoUsuario}`)
+         console.log(`Ha l9000 - cartas: ${hal9000[0].texto} ${hal9000[1].texto} - pontuação: ${pontuacaoHal9000}`)
+
+      } else {
+         console.log(`Usuário - cartas: ${usuario[0].texto} ${usuario[1].texto} - pontuação: ${pontuacaoUsuario}`)
+         console.log(`Ha l9000 - cartas: ${hal9000[0].texto} ${hal9000[1].texto} - pontuação: ${pontuacaoHal9000}`)
+      }
+
+
+      //RESULTADO
       if (pontuacaoUsuario > pontuacaoHal9000) {
          console.log("O usuário ganhou!")
       } else if (pontuacaoHal9000 > pontuacaoUsuario) {
@@ -71,7 +103,9 @@ while (jogar) {
          console.log("Empate!")
       }
 
-      for (let i = 0; i < 2; i++) {
+
+      //LIMPANDO O ARRAY
+      for (let i = 0; i < usuario.length; i++) {
          usuario.pop()
          hal9000.pop()
       }
