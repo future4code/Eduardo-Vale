@@ -98,7 +98,7 @@
 
 // EXERCÍCIO 6
 
-const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+//const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
 /* utilizado nas letras A, C e D */
 
 //6a
@@ -117,7 +117,7 @@ const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
 //         return true
 //     } else if (numero % 2 != 0) {
 //         return false
-//     } else{
+//     } else {
 //         return "Valor inválido. Tente nov4amente"
 //     }
 // }
@@ -127,15 +127,41 @@ const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
 // console.log(parOuImpar(resultado))
 
 //6c
-// incompleto
-let numPares = umArray => {
-    contaPares = 0
-    for (const iterator of umArray) {
-        if (iterator % 2 === 0) {
-            contaPares += 1
-        }
-    }
-    return contaPares
-}
 
-console.log(numPares(array))
+// let numPares = umArray => {
+//     contaPares = 0
+//     for (const iterator of umArray) {
+//         if (iterator % 2 === 0) {
+//             contaPares += 1
+//         }
+//     }
+//     return contaPares
+// }
+
+// console.log(numPares(array))
+
+//6d
+
+// médodo da 6b
+// let parOuImpar = (numero) => {
+//     if (numero % 2 === 0) {
+//         return true
+//     } else if (numero % 2 != 0) {
+//         return false
+//     } else {
+//         return "Valor inválido. Tente nov4amente"
+//     }
+// }
+
+
+// let numPares = umArray => {
+//     contaPares = 0
+//     for (const iterator of umArray) {
+//         if (parOuImpar(iterator)) {
+//             contaPares += 1
+//         }
+//     }
+//     return contaPares
+// }
+
+// console.log(numPares(array))
