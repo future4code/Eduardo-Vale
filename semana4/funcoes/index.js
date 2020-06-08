@@ -1,49 +1,3 @@
-// function dizOi() {
-//     console.log("Vasco")
-// }
-
-// dizOi()
-
-// function somaDoisNumeros(a, b) {
-//     const soma = a + b
-//     console.log(soma)    
-// }
-
-// somaDoisNumeros(4,6)
-
-// let somaDoisNumeros = function(a, b){
-//     return a + b
-//     console.log("teste")
-// }
-
-// console.log(somaDoisNumeros(3,4))
-// const resultado = somaDoisNumeros()
-// console.log(resultado)
-
-//arrow functions
-
-// let somaDoisNumeros = (a , b) => {
-//     return a + b
-// }
-
-// const resultado = somaDoisNumeros(3,5)
-// console.log(resultado)
-
-// let imprimeArray = (array) => {
-//     for (elemento of array) {
-//         console.log = (elemento)
-
-//     }
-//     return array.length
-// }
-
-// let meuArray = [3,5,3,5,3]
-
-// const resultado = imprimeArray(meuArray)
-// console.log(resultado)
-
-// console.log("aaaaaaaaa")
-
 // EXERCÍCIO 1
 
 // 1a) []
@@ -53,6 +7,8 @@
 // 1c) [0, 1, 0, 1, 2, 3, 0, 1, 2, 3 ,4, 5]
 
 
+// ------------------------------------------------------------------------------------------------
+
 // EXERCÍCIO 2
 
 // 2a) As saídas são os índices de cada nome validados no if. 0, 2, undefined
@@ -60,6 +16,8 @@
 // 2b) Sim. Seria feito a comparação do índice do array com o número presente em cada posição do array. 
 // Seria impresso no console o número do index quando este for igual ao número na chamada da função.
 
+
+// ------------------------------------------------------------------------------------------------
 
 // EXERCÍCIO 3
 
@@ -69,6 +27,8 @@
 // deste mesmo array.
 //  function somaEMultiplica(array)
 
+
+// ------------------------------------------------------------------------------------------------
 
 // EXERCÍCIO 4
 
@@ -103,3 +63,37 @@
 
 // console.log(informacao(meuNome, minhaIdade, meuEndereco, souEstudante))
 
+
+// ------------------------------------------------------------------------------------------------
+
+// EXERCÍCIO 5
+
+let seculo = (ano) => {
+    const seculos = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX", "XXI"]
+    // século XI = 1001 até 1100
+    seculoAtual = 101
+    if (ano < 1) {
+        return "O programa só funciona a partir do nascimento de Jesus Cristo ✞"
+    } else if (ano < 2100) {
+        for (const indice of seculos) {
+            if (ano < seculoAtual) {
+                return `O ano ${ano} pertence ao século ${indice}.`
+                break
+            }
+            seculoAtual += 100
+        }
+    } else {
+        return "Poxa. Estamos longe deste século, mas esperamos chegar lá.\nTente novamente!"
+    }
+}
+
+let numero = prompt("Digite um ano para ser informado de qual século ele pertence.")
+
+resposta = seculo(numero)
+
+console.log(resposta)
+
+
+// ------------------------------------------------------------------------------------------------
+
+// EXERCÍCIO 6
