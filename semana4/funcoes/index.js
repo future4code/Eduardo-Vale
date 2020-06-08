@@ -68,32 +68,74 @@
 
 // EXERCÍCIO 5
 
-let seculo = (ano) => {
-    const seculos = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX", "XXI"]
-    // século XI = 1001 até 1100
-    seculoAtual = 101
-    if (ano < 1) {
-        return "O programa só funciona a partir do nascimento de Jesus Cristo ✞"
-    } else if (ano < 2100) {
-        for (const indice of seculos) {
-            if (ano < seculoAtual) {
-                return `O ano ${ano} pertence ao século ${indice}.`
-                break
-            }
-            seculoAtual += 100
-        }
-    } else {
-        return "Poxa. Estamos longe deste século, mas esperamos chegar lá.\nTente novamente!"
-    }
-}
+// let seculo = (ano) => {
+//     const seculos = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX", "XXI"]
+//     // século XI = 1001 até 1100
+//     seculoAtual = 101
+//     if (ano < 1) {
+//         return "O programa só funciona a partir do nascimento de Jesus Cristo ✞"
+//     } else if (ano < 2100) {
+//         for (const indice of seculos) {
+//             if (ano < seculoAtual) {
+//                 return `O ano ${ano} pertence ao século ${indice}.`
+//                 break
+//             }
+//             seculoAtual += 100
+//         }
+//     } else {
+//         return "Poxa. Estamos longe deste século, mas esperamos chegar lá.\nTente novamente!"
+//     }
+// }
 
-let numero = prompt("Digite um ano para ser informado de qual século ele pertence.")
+// let numero = prompt("Digite um ano para ser informado de qual século ele pertence.")
 
-resposta = seculo(numero)
+// resposta = seculo(numero)
 
-console.log(resposta)
+// console.log(resposta)
 
 
 // ------------------------------------------------------------------------------------------------
 
 // EXERCÍCIO 6
+
+const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+/* utilizado nas letras A, C e D */
+
+//6a
+
+// let tamArray = elemento => {
+//     return elemento.length
+// }
+
+// console.log(tamArray(array))
+
+
+//6b
+
+// let parOuImpar = (numero) => {
+//     if (numero % 2 === 0) {
+//         return true
+//     } else if (numero % 2 != 0) {
+//         return false
+//     } else{
+//         return "Valor inválido. Tente nov4amente"
+//     }
+// }
+
+// resultado = prompt("Digite um número e receba True se ele for par ou False se ele or Impar3")
+
+// console.log(parOuImpar(resultado))
+
+//6c
+// incompleto
+let numPares = umArray => {
+    contaPares = 0
+    for (const iterator of umArray) {
+        if (iterator % 2 === 0) {
+            contaPares += 1
+        }
+    }
+    return contaPares
+}
+
+console.log(numPares(array))
