@@ -1,0 +1,21 @@
+body{
+    margin: 30px 2px;
+    padding: 0;
+    background-color: aqua;
+    font-family: monospace;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container > div{
+    border: 4px groove rgb(61, 56, 56);
+    border-radius: 10px;
+    width: 360px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+}   
